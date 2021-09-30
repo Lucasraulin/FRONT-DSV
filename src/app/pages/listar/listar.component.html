@@ -1,0 +1,11 @@
+<a routerLink="/pages/cadastrar">Cadastrar Filmes</a>
+
+<ol>
+    <li *ngFor="let movie of movies">
+        <p>Id: {{ movie.id }}</p><br>
+        <p>Name: {{ movie.name }}</p><br>
+        <p>Genre: {{ movie.genre }}</p><br>
+        <p>Rating: {{ movie.rating }}</p><br>
+        <p>Director: {{ movie.director }}</p>
+    </li>
+</ol>

@@ -1,0 +1,17 @@
+<div id="name">
+  <label for="name">Nome:</label>
+  <input type="text" name="name" [(ngModel)]="name" />
+</div>
+<div id="genre">
+  <label for="genre">Gênero:</label>
+  <input type="text" name="genre" [(ngModel)]="genre" />
+</div>
+<div id="rating">
+  <label for="rating">Classificação:</label>
+  <input type="text" name="rating" [(ngModel)]="rating" />
+</div>
+<div id="director">
+  <label for="director">Diretor:</label>
+  <input type="text" name="director" [(ngModel)]="director" />
+</div>
+<button (click)="cadastrar()">Cadastrar</button>
