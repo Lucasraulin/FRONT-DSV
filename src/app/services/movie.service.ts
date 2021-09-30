@@ -14,10 +14,10 @@ export class MovieService {
 
   list(): Observable<Movie[]> {
     return this.http.get<Movie[]>(`${this.baseUrl}/list`);
-}
+  }
 
-create(movie: Movie): Observable<Movie> {
+  create(movie: Movie): Observable<Movie> {
     return this.http.post<Movie>(`${this.baseUrl}/create`, movie);
-}
+  }
 
 }

@@ -27,8 +27,7 @@ export class CadastrarComponent implements OnInit {
         director: this.director
     };
     this.service.create(movie).subscribe((movie) => {
-        console.log(movie);
-        this.router.navigate(["movie/listar"]);
+        this.router.navigate([""]);
     });
 }
 

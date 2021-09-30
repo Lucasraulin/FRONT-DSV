@@ -16,7 +16,6 @@ export class ListarComponent implements OnInit {
   ngOnInit(): void {
     this.service.list().subscribe((movies) => {
        this.movies = movies;
-       console.log(movies);
     });
   }
 }
